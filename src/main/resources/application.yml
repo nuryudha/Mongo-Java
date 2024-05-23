@@ -1,0 +1,20 @@
+# spring.application.name=mongojava
+
+server:
+  port: 8888
+
+spring:
+  data:
+    mongodb:
+      uri: "mongodb+srv://admin:admin@mongodb.pscbrmg.mongodb.net/?retryWrites=true&w=majority&appName=MongoDB"
+      database: "MongoDB"
+      port: 27017
+    #   username: "admin"
+    #   password: "admin"
+
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: group_id
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
